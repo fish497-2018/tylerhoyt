@@ -8,3 +8,12 @@ fish_data_cat = fish_data %>%
 fish_data_cat = fish_data %>%
   mutate(length_cat = ifelse(length > 300, "big", "small"))
 
+
+fish_data_cat = fish_data %>%
+  mutate(length_cat = ifelse(length > 300, "big", "small")) %>%
+  filter(scalelength > 1)
+
+ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
+  geom_histogram()
+
+
