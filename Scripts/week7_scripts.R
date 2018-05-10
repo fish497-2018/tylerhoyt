@@ -18,6 +18,14 @@ library(tidyverse)
 ggplot(fish_data, aes(x = length, y = scalelength, color = lakeid)) +
   geom_point()
 
+<<<<<<< HEAD
 library(tidyverse)
 ggplot(fish_data, aes(x = length, y = scalelength, color = lakeid)) +
   geom_point()
+=======
+
+#Plot histogram of scale length by fish categorical size
+ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
+  geom_histogram()
+
+>>>>>>> 2183c7bb6ac8dd29bbff71d9ef44fc3b2cd065a5
