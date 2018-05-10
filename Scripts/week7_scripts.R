@@ -29,7 +29,7 @@ ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
   
 ggsave("scale_hist_by_length.jpg")
 
-
+tyler
 
 
 
