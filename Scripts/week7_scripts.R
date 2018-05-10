@@ -17,3 +17,7 @@ fish_data_cat = fish_data %>%
 library(tidyverse)
 ggplot(fish_data, aes(x = length, y = scalelength, color = lakeid)) +
   geom_point()
+
+library(tidyverse)
+ggplot(fish_data, aes(x = length, y = scalelength, color = lakeid)) +
+  geom_point()
